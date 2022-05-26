@@ -35,6 +35,7 @@ import { registerProductIconReference } from './features/productIconReference'
 import { registerSelectLineContents } from './features/selectLineContents'
 import { registerCutLineContents } from './features/cutLineContents'
 import { registerCutLineContentsPreserve } from './features/cutLineContentsPreserve'
+import { registerRenameVariableParts } from './features/renameVariableParts'
 
 export const activate = () => {
     // preserve camelcase identifiers (only vars for now)
@@ -73,6 +74,7 @@ export const activate = () => {
     registerSelectLineContents()
     registerCutLineContents()
     registerCutLineContentsPreserve()
+    registerRenameVariableParts()
 
     // vscode.languages.registerSelectionRangeProvider('*', {
     //     provideSelectionRanges(document, positions, token) {
